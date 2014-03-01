@@ -30,21 +30,15 @@ app.configure('development', function(){
 
 app.get('/', function(req, res){
   res.render('index', {
-    title: 'Home'
+    title: 'Sringeri Vidya Bharati Foundation (SVBF) | Stroudsburg, PA'
   });
 });
 
-app.get('/about', function(req, res){
-  res.render('about', {
-    title: 'About'
-  });
-});
-
-app.get('/contact', function(req, res){
-  res.render('contact', {
-    title: 'Contact'
-  });
-});
+// app.get('/contact', function(req, res){
+//   res.render('contact', {
+//     title: 'Contact Us'
+//   });
+// });
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
